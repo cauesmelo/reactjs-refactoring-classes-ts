@@ -97,8 +97,10 @@ const Dashboard = () => {
         {foods &&
           foods.map(food => (
             <Food
+              foods={foods}
               key={food.id}
               food={food}
+              setFoods={setFoods}
               handleDelete={handleDeleteFood}
               handleEditFood={handleEditFood}
             />
